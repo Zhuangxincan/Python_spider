@@ -1,0 +1,239 @@
+1656643262184	geckodriver	INFO	Listening on 127.0.0.1:55794
+1656643264209	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55795" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Zhuangxincan.AD\\AppData\\Local\\Temp\\rust_mozprofile00hV70"
+1656643266456	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Zhuangxincan.AD\\AppData\\Local\\Temp\\rust_mozprofile00hV70\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55795/devtools/browser/0b814404-2154-45e9-a259-48c70ec1c8bf
+1656643270958	Marionette	INFO	Listening on port 55800
+1656643271074	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1656643283569	Marionette	INFO	Stopped listening on port 55800
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+1656643284280	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1656643418734	geckodriver	INFO	Listening on 127.0.0.1:53495
+1656643420741	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53496" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Zhuangxincan.AD\\AppData\\Local\\Temp\\rust_mozprofileM2Xnqt"
+1656643421566	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Zhuangxincan.AD\\AppData\\Local\\Temp\\rust_mozprofileM2Xnqt\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53496/devtools/browser/157672bc-1854-456b-9759-210328fef891
+1656643423995	Marionette	INFO	Listening on port 53501
+1656643424076	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.baidu.com"
+1656643507553	Marionette	INFO	Stopped listening on port 53501
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+1656643508220	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+brush_solid
+
+[2022-07-01T02:45:03Z ERROR webrender::device::gl] Failed to compile vertex shader: brush_solid
+    
+[GFX1-]: Failed to compile vertex shader: brush_image_ALPHA_PASS_TEXTURE_2D
+
+[2022-07-01T02:45:03Z ERROR webrender::device::gl] Failed to compile vertex shader: brush_image_ALPHA_PASS_TEXTURE_2D
+    
+[GFX1-]: Failed to compile vertex shader: brush_image_ALPHA_PASS_TEXTURE_2D
+
+[2022-07-01T02:45:03Z ERROR webrender::device::gl] Failed to compile vertex shader: brush_image_ALPHA_PASS_TEXTURE_2D
+    
+[GFX1-]: Failed to compile vertex shader: brush_image_ALPHA_PASS_TEXTURE_2D
+
+[2022-07-01T02:45:03Z ERROR webrender::device::gl] Failed to compile vertex shader: brush_image_ALPHA_PASS_TEXTURE_2D
+    
+[GFX1-]: Failed to compile vertex shader: brush_opacity_ALPHA_PASS
+
+[2022-07-01T02:45:03Z ERROR webrender::device::gl] Failed to compile vertex shader: brush_opacity_ALPHA_PASS
+    
+[GFX1-]: Failed to compile vertex shader: brush_solid_ALPHA_PASS
+
+[2022-07-01T02:45:03Z ERROR webrender::device::gl] Failed to compile vertex shader: brush_solid_ALPHA_PASS
+    
+[GFX1-]: Failed to compile vertex shader: brush_image_ALPHA_PASS_TEXTURE_2D
+
+[2022-07-01T02:45:03Z ERROR webrender::device::gl] Failed to compile vertex shader: brush_image_ALPHA_PASS_TEXTURE_2D
+    
+[GFX1-]: Failed to compile vertex shader: ps_text_run_ALPHA_PASS_DUAL_SOURCE_BLENDING_TEXTURE_2D
+
+[2022-07-01T02:45:03Z ERROR webrender::device::gl] Failed to compile vertex shader: ps_text_run_ALPHA_PASS_DUAL_SOURCE_BLENDING_TEXTURE_2D
+    
+[GFX1-]: Failed to compile vertex shader: brush_solid
+
+[2022-07-01T02:45:03Z ERROR webrender::device::gl] Failed to compile vertex shader: brush_solid
+    
+[GFX1-]: Failed to compile vertex shader: brush_image_ALPHA_PASS_TEXTURE_2D
+
+[2022-07-01T02:45:03Z ERROR webrender::device::gl] Failed to compile vertex shader: brush_image_ALPHA_PASS_TEXTURE_2D
+    
+[GFX1-]: Failed to compile vertex shader: brush_image_ALPHA_PASS_TEXTURE_2D
+
+[2022-07-01T02:45:03Z ERROR webrender::device::gl] Failed to compile vertex shader: brush_image_ALPHA_PASS_TEXTURE_2D
+    
+[GFX1-]: Failed to compile vertex shader: brush_solid_ALPHA_PASS
+
+[2022-07-01T02:45:03Z ERROR webrender::device::gl] Failed to compile vertex shader: brush_solid_ALPHA_PASS
+    
+[GFX1-]: Failed to compile vertex shader: brush_image_ALPHA_PASS_TEXTURE_2D
+
+[2022-07-01T02:45:03Z ERROR webrender::device::gl] Failed to compile vertex shader: brush_image_ALPHA_PASS_TEXTURE_2D
+    
+[GFX1-]: Failed to compile vertex shader: brush_opacity_ALPHA_PASS
+
+[2022-07-01T02:45:03Z ERROR webrender::device::gl] Failed to compile vertex shader: brush_opacity_ALPHA_PASS
+    
+[GFX1-]: Failed to compile vertex shader: brush_solid
+
+[2022-07-01T02:45:03Z ERROR webrender::device::gl] Failed to compile vertex shader: brush_solid
+    
+[GFX1-]: Failed to compile vertex shader: brush_solid
+
+[2022-07-01T02:45:03Z ERROR webrender::device::gl] Failed to compile vertex shader: brush_solid
+    
+[GFX1-]: wr_renderer_render: Shader(Link("cs_clip_box_shadow", ""))
+[GFX1-]: wr_renderer_render: Shader(Compilation("brush_image_ALPHA_PASS_TEXTURE_2D", ""))
+[GFX1-]: wr_renderer_render: Shader(Compilation("brush_solid", ""))
+[GFX1-]: wr_renderer_render: Shader(Compilation("brush_image_ALPHA_PASS_TEXTURE_2D", ""))
+[GFX1-]: wr_renderer_render: Shader(Compilation("brush_image_ALPHA_PASS_TEXTURE_2D", ""))
+[GFX1-]: wr_renderer_render: Shader(Compilation("brush_image_ALPHA_PASS_TEXTURE_2D", ""))
+[GFX1-]: wr_renderer_render: Shader(Compilation("brush_opacity_ALPHA_PASS", ""))
+[GFX1-]: wr_renderer_render: Shader(Compilation("brush_solid_ALPHA_PASS", ""))
+[GFX1-]: wr_renderer_render: Shader(Compilation("brush_image_ALPHA_PASS_TEXTURE_2D", ""))
+[GFX1-]: wr_renderer_render: Shader(Compilation("ps_text_run_ALPHA_PASS_DUAL_SOURCE_BLENDING_TEXTURE_2D", ""))
+[GFX1-]: wr_renderer_render: Shader(Compilation("brush_solid", ""))
+[GFX1-]: wr_renderer_render: Shader(Compilation("brush_image_ALPHA_PASS_TEXTURE_2D", ""))
+[GFX1-]: wr_renderer_render: Shader(Compilation("brush_image_ALPHA_PASS_TEXTURE_2D", ""))
+[GFX1-]: wr_renderer_render: Shader(Compilation("brush_solid_ALPHA_PASS", ""))
+[GFX1-]: wr_renderer_render: Shader(Compilation("brush_image_ALPHA_PASS_TEXTURE_2D", ""))
+[GFX1-]: wr_renderer_render: Shader(Compilation("brush_opacity_ALPHA_PASS", ""))
+[GFX1-]: wr_renderer_render: Shader(Compilation("brush_solid", ""))
+[GFX1-]: wr_renderer_render: Shader(Compilation("brush_solid", ""))
+[GFX1-]: Fallback WR to SW-WR + D[3GDF11
+X1-]: Failed to compile vertex shader: cs_clip_box_shadow_TEXTURE_2D
+
+[2022-07-01T02:45:03Z ERROR webrender::device::gl] Failed to compile vertex shader: cs_clip_box_shadow_TEXTURE_2D
+    
+[GFX1-]: Failed to compile vertex shader: brush_image_ALPHA_PASS_TEXTURE_2D
+
+[2022-07-01T02:45:03Z ERROR webrender::device::gl] Failed to compile vertex shader: brush_image_ALPHA_PASS_TEXTURE_2D
+    
+[GFX1-]: Failed to compile vertex shader: brush_solid
+
+[2022-07-01T02:45:03Z ERROR webrender::device::gl] Failed to compile vertex shader: brush_solid
+    
+[GFX1-]: Failed to compile vertex shader: brush_image_ALPHA_PASS_TEXTURE_2D
+
+[2022-07-01T02:45:03Z ERROR webrender::device::gl] Failed to compile vertex shader: brush_image_ALPHA_PASS_TEXTURE_2D
+    
+[GFX1-]: Failed to compile vertex shader: brush_image_ALPHA_PASS_TEXTURE_2D
+
+[2022-07-01T02:45:03Z ERROR webrender::device::gl] Failed to compile vertex shader: brush_image_ALPHA_PASS_TEXTURE_2D
+    
+[GFX1-]: Failed to compile vertex shader: brush_image_ALPHA_PASS_TEXTURE_2D
+
+[2022-07-01T02:45:03Z ERROR webrender::device::gl] Failed to compile vertex shader: brush_image_ALPHA_PASS_TEXTURE_2D
+    
+[GFX1-]: Failed to compile vertex shader: brush_solid_ALPHA_PASS
+
+[2022-07-01T02:45:03Z ERROR webrender::device::gl] Failed to compile vertex shader: brush_solid_ALPHA_PASS
+    
+[GFX1-]: Failed to compile vertex shader: brush_image_ALPHA_PASS_TEXTURE_2D
+
+[2022-07-01T02:45:03Z ERROR webrender::device::gl] Failed to compile vertex shader: brush_image_ALPHA_PASS_TEXTURE_2D
+    
+[GFX1-]: Failed to compile vertex shader: ps_text_run_ALPHA_PASS_DUAL_SOURCE_BLENDING_TEXTURE_2D
+
+[2022-07-01T02:45:03Z ERROR webrender::device::gl] Failed to compile vertex shader: ps_text_run_ALPHA_PASS_DUAL_SOURCE_BLENDING_TEXTURE_2D
+    
+[GFX1-]: Failed to compile vertex shader: brush_opacity_ALPHA_PASS
+
+[2022-07-01T02:45:03Z ERROR webrender::device::gl] Failed to compile vertex shader: brush_opacity_ALPHA_PASS
+    
+[GFX1-]: wr_renderer_render: Shader(Compilation("cs_clip_box_shadow_TEXTURE_2D", ""))
+[GFX1-]: wr_renderer_render: Shader(Compilation("brush_image_ALPHA_PASS_TEXTURE_2D", ""))
+[GFX1-]: wr_renderer_render: Shader(Compilation("brush_solid", ""))
+[GFX1-]: wr_renderer_render: Shader(Compilation("brush_image_ALPHA_PASS_TEXTURE_2D", ""))
+[GFX1-]: wr_renderer_render: Shader(Compilation("brush_image_ALPHA_PASS_TEXTURE_2D", ""))
+[GFX1-]: wr_renderer_render: Shader(Compilation("brush_image_ALPHA_PASS_TEXTURE_2D", ""))
+[GFX1-]: wr_renderer_render: Shader(Compilation("brush_solid_ALPHA_PASS", ""))
+[GFX1-]: wr_renderer_render: Shader(Compilation("brush_image_ALPHA_PASS_TEXTURE_2D", ""))
+[GFX1-]: wr_renderer_render: Shader(Compilation("ps_text_run_ALPHA_PASS_DUAL_SOURCE_BLENDING_TEXTURE_2D", ""))
+[GFX1-]: wr_renderer_render: Shader(Compilation("brush_opacity_ALPHA_PASS", ""))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Zhuangxincan.AD\\AppData\\Local\\Temp\\rust_mozprofilexMa3Yw\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:62012/devtools/browser/d8851cc1-458b-47b9-8650-33dd4ce0d8d0
+1656643509300	Marionette	INFO	Listening on port 62017
+1656643509736	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://pss.bdstatic.com/r/www/cache/static/protocol/https/amd_modules/@baidu/search-sug_820a2b4.js, line 4: NS_ERROR_FAILURE: 
+JavaScript error: https://dss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/js/min_super-ee31f465fa.js, line 56: NS_ERROR_FAILURE: 
+JavaScript error: https://pss.bdstatic.com/r/www/cache/static/protocol/https/plugins/every_cookie_4644b13.js, line 5: TypeError: i.soObject is undefined
+JavaScript error: https://pss.bdstatic.com/r/www/cache/static/protocol/https/home/js/nu_instant_search_94a3062.js, line 9: NS_ERROR_FAILURE: 
+1656643532633	Marionette	INFO	Stopped listening on port 62017
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004J0a0v5a S(cNrS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+ipt error: , line 0: AbortError: The operation was aborted. 
+!!! error running onStopped callback: TypeError: callback is not a function
+console.error: (new Error("SessionFile is closed", "resource:///modules/sessionstore/SessionFile.jsm", 433))
+WARNING: At least one completion condition is taking too long to complete. Conditions: [{"name":"ContentParent: id=248d3d39000","state":{"remoteTypePrefix":"prealloc"},"filename":"/builds/worker/checkouts/gecko/dom/ipc/ContentParent.cpp","lineNumber":3502,"stack":["resource://gre/modules/nsAsyncShutdown.jsm:addBlocker:162"]},{"name":"SessionFile: Finish writing Session Restore data","state":{"options":{"isFinalWrite":false,"performShutdownCleanup":false},"attempts":3,"successes":0,"failures":0},"filename":"resource:///modules/sessionstore/SessionFile.jsm","lineNumber":478,"stack":["resource:///modules/sessionstore/SessionFile.jsm:write:478","resource:///modules/sessionstore/SessionFile.jsm:write:75","resource:///modules/sessionstore/SessionSaver.jsm:_writeState:367","resource:///modules/sessionstore/SessionSaver.jsm:_saveState:301","resource:///modules/sessionstore/SessionSaver.jsm:_saveStateAsync:351","resource:///modules/sessionstore/SessionSaver.jsm:saveStateAsyncWhenIdle:198","resource://gre/modules/Timer.jsm:callback:127"]},{"name":"SessionFile: Finish writing Session Restore data","state":{"options":{"isFinalWrite":false,"performShutdownCleanup":false},"attempts":3,"successes":0,"failures":0},"filename":"resource:///modules/sessionstore/SessionFile.jsm","lineNumber":478,"stack":["resource:///modules/sessionstore/SessionFile.jsm:write:478","resource:///modules/sessionstore/SessionFile.jsm:write:75","resource:///modules/sessionstore/SessionSaver.jsm:_writeState:367","resource:///modules/sessionstore/SessionSaver.jsm:_saveState:301","resource:///modules/sessionstore/SessionSaver.jsm:_saveStateAsync:351","resource:///modules/sessionstore/SessionSaver.jsm:saveStateAsyncWhenIdle:198","resource://gre/modules/Timer.jsm:callback:127"]},{"name":"SessionFile: Finish writing Session Restore data","state":{"options":{"isFinalWrite":true,"performShutdownCleanup":true},"attempts":3,"successes":0,"failures":0},"filename":"resource:///modules/sessionstore/SessionFile.jsm","lineNumber":478,"stack":["resource:///modules/sessionstore/SessionFile.jsm:write:478","resource:///modules/sessionstore/SessionFile.jsm:write:75","resource:///modules/sessionstore/SessionSaver.jsm:_writeState:367","resource:///modules/sessionstore/SessionSaver.jsm:_saveState:301","resource:///modules/sessionstore/SessionSaver.jsm:run:161","resource:///modules/sessionstore/SessionSaver.jsm:run:76","resource:///modules/sessionstore/SessionStore.jsm:ssi_uninit:932","resource:///modules/sessionstore/SessionStore.jsm:ssi_onQuitApplication:2182","resource:///modules/sessionstore/SessionStore.jsm:ssi_observe:966"]}] Barrier: profile-before-change
+JavaScript error: resource://gre/modules/CrashManager.jsm, line 829: AbortError: IOUtils: Shutting down and refusing additional I/O tasks
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_untrustedmodules_ping
+FATAL ERROR: AsyncShutdown timeout in profile-before-change Conditions: [{"name":"SessionFile: Finish writing Session Restore data","state":{"options":{"isFinalWrite":false,"performShutdownCleanup":false},"attempts":3,"successes":0,"failures":0},"filename":"resource:///modules/sessionstore/SessionFile.jsm","lineNumber":478,"stack":["resource:///modules/sessionstore/SessionFile.jsm:write:478","resource:///modules/sessionstore/SessionFile.jsm:write:75","resource:///modules/sessionstore/SessionSaver.jsm:_writeState:367","resource:///modules/sessionstore/SessionSaver.jsm:_saveState:301","resource:///modules/sessionstore/SessionSaver.jsm:_saveStateAsync:351","resource:///modules/sessionstore/SessionSaver.jsm:saveStateAsyncWhenIdle:198","resource://gre/modules/Timer.jsm:callback:127"]},{"name":"SessionFile: Finish writing Session Restore data","state":{"options":{"isFinalWrite":false,"performShutdownCleanup":false},"attempts":3,"successes":0,"failures":0},"filename":"resource:///modules/sessionstore/SessionFile.jsm","lineNumber":478,"stack":["resource:///modules/sessionstore/SessionFile.jsm:write:478","resource:///modules/sessionstore/SessionFile.jsm:write:75","resource:///modules/sessionstore/SessionSaver.jsm:_writeState:367","resource:///modules/sessionstore/SessionSaver.jsm:_saveState:301","resource:///modules/sessionstore/SessionSaver.jsm:_saveStateAsync:351","resource:///modules/sessionstore/SessionSaver.jsm:saveStateAsyncWhenIdle:198","resource://gre/modules/Timer.jsm:callback:127"]},{"name":"SessionFile: Finish writing Session Restore data","state":{"options":{"isFinalWrite":true,"performShutdownCleanup":true},"attempts":3,"successes":0,"failures":0},"filename":"resource:///modules/sessionstore/SessionFile.jsm","lineNumber":478,"stack":["resource:///modules/sessionstore/SessionFile.jsm:write:478","resource:///modules/sessionstore/SessionFile.jsm:write:75","resource:///modules/sessionstore/SessionSaver.jsm:_writeState:367","resource:///modules/sessionstore/SessionSaver.jsm:_saveState:301","resource:///modules/sessionstore/SessionSaver.jsm:run:161","resource:///modules/sessionstore/SessionSaver.jsm:run:76","resource:///modules/sessionstore/SessionStore.jsm:ssi_uninit:932","resource:///modules/sessionstore/SessionStore.jsm:ssi_onQuitApplication:2182","resource:///modules/sessionstore/SessionStore.jsm:ssi_observe:966"]}] At least one completion condition failed to complete within a reasonable amount of time. Causing a crash to ensure that we do not leave the user with an unresponsive process draining resources.
+[Parent 17628, Main Thread] ###!!! ABORT: file resource:///modules/sessionstore/SessionFile.jsm:478
+[Parent 17628, Main Thread] ###!!! ABORT: file resource:///modules/sessionstore/SessionFile.jsm:478
+1656644298428	geckodriver	INFO	Listening on 127.0.0.1:61485
+1656644300436	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61486" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Zhuangxincan.AD\\AppData\\Local\\Temp\\rust_mozprofilez5wNi8"
+1656644301474	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Zhuangxincan.AD\\AppData\\Local\\Temp\\rust_mozprofilez5wNi8\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:61486/devtools/browser/c8685aa1-8828-40d0-9fa3-7476c92dfcd4
+1656644304357	Marionette	INFO	Listening on port 61491
+1656644304780	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1656644321209	Marionette	INFO	Stopped listening on port 61491
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+JavaScript error: , line 0: AbortError: The operation was aborted. 
+1656644321810	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1656645187188	geckodriver	INFO	Listening on 127.0.0.1:49463
+1656645189192	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49464" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Zhuangxincan.AD\\AppData\\Local\\Temp\\rust_mozprofilegCkPNQ"
+1656645190579	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Zhuangxincan.AD\\AppData\\Local\\Temp\\rust_mozprofilegCkPNQ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:49464/devtools/browser/91bee236-25c1-4429-a15c-26eb1dd1dff3
+1656645193159	Marionette	INFO	Listening on port 49469
+1656645193531	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1656645211323	Marionette	INFO	Stopped listening on port 49469
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+JavaScript error: , line 0: AbortError: The operation was aborted. 
+1656645211864	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1656645669088	geckodriver	INFO	Listening on 127.0.0.1:65300
+1656645671092	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65301" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Zhuangxincan.AD\\AppData\\Local\\Temp\\rust_mozprofiler3MP15"
+1656645672124	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Zhuangxincan.AD\\AppData\\Local\\Temp\\rust_mozprofiler3MP15\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:65301/devtools/browser/d1123f7a-08a8-40e9-9db6-5934ebb6bd89
+1656645674930	Marionette	INFO	Listening on port 65306
+1656645675443	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: AbortError: The operation was aborted. 
+1656645680512	Marionette	INFO	Stopped listening on port 65306
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+1656645681140	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138

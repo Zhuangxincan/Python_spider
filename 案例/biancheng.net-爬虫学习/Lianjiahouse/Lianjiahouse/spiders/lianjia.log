@@ -1,0 +1,2943 @@
+2022-07-26 15:11:12 [scrapy.utils.log] INFO: Scrapy 2.6.1 started (bot: Lianjiahouse)
+2022-07-26 15:11:12 [scrapy.utils.log] INFO: Versions: lxml 4.8.0.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 22.4.0, Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 3.0.3 3 May 2022), cryptography 37.0.2, Platform Windows-10-10.0.17763-SP0
+2022-07-26 15:11:12 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'Lianjiahouse',
+ 'DOWNLOAD_DELAY': 2,
+ 'FEED_EXPORT_ENCODING': 'ISO-8859-1',
+ 'LOG_FILE': 'lianjia.log',
+ 'NEWSPIDER_MODULE': 'Lianjiahouse.spiders',
+ 'SPIDER_MODULES': ['Lianjiahouse.spiders']}
+2022-07-26 15:11:12 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2022-07-26 15:11:12 [scrapy.extensions.telnet] INFO: Telnet Password: fa9242395de11bbc
+2022-07-26 15:11:12 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2022-07-26 15:11:12 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-07-26 15:11:12 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-07-26 15:11:12 [scrapy.middleware] INFO: Enabled item pipelines:
+['Lianjiahouse.pipelines.LianjiahouseMysqlPipeline',
+ 'Lianjiahouse.pipelines.LianjiahousePipeline']
+2022-07-26 15:11:12 [scrapy.core.engine] INFO: Spider opened
+2022-07-26 15:11:13 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-07-26 15:11:13 [py.warnings] WARNING: D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py:65: URLWarning: allowed_domains accepts only domains, not URLs. Ignoring URL entry https://bj.lianjia.com/ershoufang/pg2/ in allowed_domains.
+  warnings.warn(message, URLWarning)
+
+2022-07-26 15:11:13 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-07-26 15:11:14 [filelock] DEBUG: Attempting to acquire lock 3059436249040 on D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-07-26 15:11:14 [filelock] DEBUG: Lock 3059436249040 acquired on D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-07-26 15:11:14 [filelock] DEBUG: Attempting to release lock 3059436249040 on D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-07-26 15:11:14 [filelock] DEBUG: Lock 3059436249040 released on D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-07-26 15:11:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/ershoufang/pg1/> (referer: None)
+2022-07-26 15:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '世纪星城',
+ 'area': '92.2平米',
+ 'direction': '南 北',
+ 'floor': '高楼层(共10层)',
+ 'model': '4室2厅',
+ 'name': '世纪星城 ',
+ 'perfect': '简装',
+ 'price_list': '59,653元/平',
+ 'total_list': '550'}
+2022-07-26 15:11:14 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2022-07-26 15:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '富锦嘉园五区',
+ 'area': '93.83平米',
+ 'direction': '南 北',
+ 'floor': '顶层(共6层)',
+ 'model': '2室1厅',
+ 'name': '富锦嘉园五区 ',
+ 'perfect': '精装',
+ 'price_list': '59,683元/平',
+ 'total_list': '560'}
+2022-07-26 15:11:14 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-5: ordinal not in range(256)
+2022-07-26 15:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '长城国际',
+ 'area': '48.52平米',
+ 'direction': '东',
+ 'floor': '22层',
+ 'model': '1室0厅',
+ 'name': '长城国际 ',
+ 'perfect': '精装',
+ 'price_list': '38,747元/平',
+ 'total_list': '188'}
+2022-07-26 15:11:14 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2022-07-26 15:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '绿岛苑西区',
+ 'area': '96.05平米',
+ 'direction': '西南',
+ 'floor': '高楼层(共24层)',
+ 'model': '3室1厅',
+ 'name': '绿岛苑西区 ',
+ 'perfect': '简装',
+ 'price_list': '46,331元/平',
+ 'total_list': '445'}
+2022-07-26 15:11:14 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-4: ordinal not in range(256)
+2022-07-26 15:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '天伦锦城',
+ 'area': '111.34平米',
+ 'direction': '南 北',
+ 'floor': '低楼层(共13层)',
+ 'model': '3室1厅',
+ 'name': '天伦锦城 ',
+ 'perfect': '精装',
+ 'price_list': '47,243元/平',
+ 'total_list': '526'}
+2022-07-26 15:11:14 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2022-07-26 15:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '天通苑北二区',
+ 'area': '236.02平米',
+ 'direction': '南 北',
+ 'floor': '底层(共13层)',
+ 'model': '4室2厅',
+ 'name': '天通苑北二区 ',
+ 'perfect': '精装',
+ 'price_list': '26,269元/平',
+ 'total_list': '620'}
+2022-07-26 15:11:14 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-5: ordinal not in range(256)
+2022-07-26 15:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '京杭府',
+ 'area': '181.78平米',
+ 'direction': '南 北',
+ 'floor': '低楼层(共36层)',
+ 'model': '3室2厅',
+ 'name': '京杭府 ',
+ 'perfect': '精装',
+ 'price_list': '51,711元/平',
+ 'total_list': '940'}
+2022-07-26 15:11:14 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-2: ordinal not in range(256)
+2022-07-26 15:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '东潞苑',
+ 'area': '121.65平米',
+ 'direction': '南 北',
+ 'floor': '中楼层(共6层)',
+ 'model': '2室1厅',
+ 'name': '东潞苑 ',
+ 'perfect': '简装',
+ 'price_list': '26,141元/平',
+ 'total_list': '318'}
+2022-07-26 15:11:14 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-2: ordinal not in range(256)
+2022-07-26 15:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '北京洋房',
+ 'area': '163.16平米',
+ 'direction': '南 北',
+ 'floor': '中楼层(共5层)',
+ 'model': '3室2厅',
+ 'name': '北京洋房 ',
+ 'perfect': '简装',
+ 'price_list': '41,555元/平',
+ 'total_list': '678'}
+2022-07-26 15:11:14 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2022-07-26 15:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '中海紫御公馆',
+ 'area': '207.44平米',
+ 'direction': '南 北 西',
+ 'floor': '低楼层(共21层)',
+ 'model': '4室2厅',
+ 'name': '中海紫御公馆 ',
+ 'perfect': '精装',
+ 'price_list': '134,979元/平',
+ 'total_list': '2800'}
+2022-07-26 15:11:14 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-5: ordinal not in range(256)
+2022-07-26 15:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '松榆西里',
+ 'area': '79.78平米',
+ 'direction': '东南',
+ 'floor': '高楼层(共18层)',
+ 'model': '3室1厅',
+ 'name': '松榆西里 ',
+ 'perfect': '简装',
+ 'price_list': '68,439元/平',
+ 'total_list': '546'}
+2022-07-26 15:11:14 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2022-07-26 15:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '车站西街9号院',
+ 'area': '93.49平米',
+ 'direction': '南 北',
+ 'floor': '高楼层(共6层)',
+ 'model': '3室1厅',
+ 'name': '车站西街9号院 ',
+ 'perfect': '简装',
+ 'price_list': '108,996元/平',
+ 'total_list': '1019'}
+2022-07-26 15:11:14 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2022-07-26 15:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '清缘里中区',
+ 'area': '86.69平米',
+ 'direction': '东南',
+ 'floor': '中楼层(共13层)',
+ 'model': '2室1厅',
+ 'name': '清缘里中区 ',
+ 'perfect': '简装',
+ 'price_list': '65,752元/平',
+ 'total_list': '570'}
+2022-07-26 15:11:14 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-4: ordinal not in range(256)
+2022-07-26 15:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '恒盛小镇艺墅',
+ 'area': '88.33平米',
+ 'direction': '南 北',
+ 'floor': '中楼层(共11层)',
+ 'model': '2室1厅',
+ 'name': '恒盛小镇艺墅 ',
+ 'perfect': '简装',
+ 'price_list': '23,775元/平',
+ 'total_list': '210'}
+2022-07-26 15:11:14 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-5: ordinal not in range(256)
+2022-07-26 15:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '观湖国际',
+ 'area': '266.26平米',
+ 'direction': '南 北',
+ 'floor': '高楼层(共27层)',
+ 'model': '4室2厅',
+ 'name': '观湖国际 ',
+ 'perfect': '精装',
+ 'price_list': '105,161元/平',
+ 'total_list': '2800'}
+2022-07-26 15:11:14 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2022-07-26 15:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '益明园',
+ 'area': '108.68平米',
+ 'direction': '南 北',
+ 'floor': '高楼层(共11层)',
+ 'model': '3室2厅',
+ 'name': '益明园 ',
+ 'perfect': '精装',
+ 'price_list': '91,830元/平',
+ 'total_list': '998'}
+2022-07-26 15:11:14 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-2: ordinal not in range(256)
+2022-07-26 15:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '西成忆树',
+ 'area': '148.82平米',
+ 'direction': '南 北',
+ 'floor': '中楼层(共18层)',
+ 'model': '3室2厅',
+ 'name': '西成忆树 ',
+ 'perfect': '精装',
+ 'price_list': '48,381元/平',
+ 'total_list': '720'}
+2022-07-26 15:11:14 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2022-07-26 15:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '久敬佳园一区',
+ 'area': '99.6平米',
+ 'direction': '南 北',
+ 'floor': '中楼层(共6层)',
+ 'model': '2室2厅',
+ 'name': '久敬佳园一区 ',
+ 'perfect': '精装',
+ 'price_list': '52,511元/平',
+ 'total_list': '523'}
+2022-07-26 15:11:14 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-5: ordinal not in range(256)
+2022-07-26 15:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '香悦四季',
+ 'area': '136.21平米',
+ 'direction': '南 北',
+ 'floor': '中楼层(共11层)',
+ 'model': '4室2厅',
+ 'name': '香悦四季 ',
+ 'perfect': '精装',
+ 'price_list': '37,369元/平',
+ 'total_list': '509'}
+2022-07-26 15:11:14 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2022-07-26 15:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '天通苑北一区',
+ 'area': '106.41平米',
+ 'direction': '南',
+ 'floor': '低楼层(共13层)',
+ 'model': '2室2厅',
+ 'name': '天通苑北一区 ',
+ 'perfect': '精装',
+ 'price_list': '46,049元/平',
+ 'total_list': '490'}
+2022-07-26 15:11:14 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-5: ordinal not in range(256)
+2022-07-26 15:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '风景club',
+ 'area': '139.01平米',
+ 'direction': '西北',
+ 'floor': '中楼层(共15层)',
+ 'model': '3室2厅',
+ 'name': '风景club ',
+ 'perfect': '毛坯',
+ 'price_list': '64,025元/平',
+ 'total_list': '890'}
+2022-07-26 15:11:14 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-1: ordinal not in range(256)
+2022-07-26 15:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '风格与林苑',
+ 'area': '178.28平米',
+ 'direction': '南 北',
+ 'floor': '中楼层(共4层)',
+ 'model': '4室1厅',
+ 'name': '风格与林苑 ',
+ 'perfect': '简装',
+ 'price_list': '46,444元/平',
+ 'total_list': '828'}
+2022-07-26 15:11:14 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-4: ordinal not in range(256)
+2022-07-26 15:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '万泉新新家园',
+ 'area': '175.09平米',
+ 'direction': '南 北',
+ 'floor': '中楼层(共6层)',
+ 'model': '3室2厅',
+ 'name': '万泉新新家园 ',
+ 'perfect': '精装',
+ 'price_list': '162,774元/平',
+ 'total_list': '2850'}
+2022-07-26 15:11:14 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-5: ordinal not in range(256)
+2022-07-26 15:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '香花畦家园',
+ 'area': '168.48平米',
+ 'direction': '南 北',
+ 'floor': '中楼层(共8层)',
+ 'model': '4室2厅',
+ 'name': '香花畦家园 ',
+ 'perfect': '精装',
+ 'price_list': '43,923元/平',
+ 'total_list': '740'}
+2022-07-26 15:11:14 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-4: ordinal not in range(256)
+2022-07-26 15:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '本家润园一期',
+ 'area': '191.65平米',
+ 'direction': '南 北',
+ 'floor': '中楼层(共13层)',
+ 'model': '3室2厅',
+ 'name': '本家润园一期 ',
+ 'perfect': '精装',
+ 'price_list': '123,663元/平',
+ 'total_list': '2370'}
+2022-07-26 15:11:14 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-5: ordinal not in range(256)
+2022-07-26 15:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '风格雅园',
+ 'area': '150.97平米',
+ 'direction': '南 北',
+ 'floor': '高楼层(共17层)',
+ 'model': '3室2厅',
+ 'name': '风格雅园 ',
+ 'perfect': '精装',
+ 'price_list': '79,486元/平',
+ 'total_list': '1200'}
+2022-07-26 15:11:14 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2022-07-26 15:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '合生国际花园',
+ 'area': '137.56平米',
+ 'direction': '南 北',
+ 'floor': '24层',
+ 'model': '3室2厅',
+ 'name': '合生国际花园 ',
+ 'perfect': '精装',
+ 'price_list': '106,063元/平',
+ 'total_list': '1459'}
+2022-07-26 15:11:14 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-5: ordinal not in range(256)
+2022-07-26 15:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '金港国际',
+ 'area': '152.13平米',
+ 'direction': '南 北',
+ 'floor': '9层',
+ 'model': '4室2厅',
+ 'name': '金港国际 ',
+ 'perfect': '精装',
+ 'price_list': '95,905元/平',
+ 'total_list': '1459'}
+2022-07-26 15:11:14 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2022-07-26 15:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '远洋一方润园2号院',
+ 'area': '143.75平米',
+ 'direction': '南 北',
+ 'floor': '低楼层(共6层)',
+ 'model': '3室1厅',
+ 'name': '远洋一方润园2号院 ',
+ 'perfect': '精装',
+ 'price_list': '62,540元/平',
+ 'total_list': '899'}
+2022-07-26 15:11:14 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-5: ordinal not in range(256)
+2022-07-26 15:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '嘉华世纪公寓',
+ 'area': '92.47平米',
+ 'direction': '南',
+ 'floor': '低楼层(共18层)',
+ 'model': '1室1厅',
+ 'name': '嘉华世纪公寓 ',
+ 'perfect': '精装',
+ 'price_list': '64,876元/平',
+ 'total_list': '599.9'}
+2022-07-26 15:11:14 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-5: ordinal not in range(256)
+2022-07-26 15:11:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/ershoufang/pg2/> (referer: https://bj.lianjia.com/ershoufang/pg1/)
+2022-07-26 15:11:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '朝阳门北小街',
+ 'area': '117.07平米',
+ 'direction': '南 北',
+ 'floor': '顶层(共6层)',
+ 'model': '4室2厅',
+ 'name': '朝阳门北小街 ',
+ 'perfect': '精装',
+ 'price_list': '106,774元/平',
+ 'total_list': '1250'}
+2022-07-26 15:11:16 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-5: ordinal not in range(256)
+2022-07-26 15:11:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '盛景嘉园',
+ 'area': '181.44平米',
+ 'direction': '南 北',
+ 'floor': '7层',
+ 'model': '4室2厅',
+ 'name': '盛景嘉园 ',
+ 'perfect': '简装',
+ 'price_list': '132,276元/平',
+ 'total_list': '2400'}
+2022-07-26 15:11:16 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2022-07-26 15:11:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '天通苑北三区',
+ 'area': '129.05平米',
+ 'direction': '南 北',
+ 'floor': '中楼层(共7层)',
+ 'model': '3室2厅',
+ 'name': '天通苑北三区 ',
+ 'perfect': '简装',
+ 'price_list': '44,169元/平',
+ 'total_list': '570'}
+2022-07-26 15:11:16 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-5: ordinal not in range(256)
+2022-07-26 15:11:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '泰和宜园',
+ 'area': '138.91平米',
+ 'direction': '南 北',
+ 'floor': '低楼层(共11层)',
+ 'model': '3室2厅',
+ 'name': '泰和宜园 ',
+ 'perfect': '精装',
+ 'price_list': '31,316元/平',
+ 'total_list': '435'}
+2022-07-26 15:11:16 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2022-07-26 15:11:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '帅府园二期',
+ 'area': '160.05平米',
+ 'direction': '南 北',
+ 'floor': '低楼层(共21层)',
+ 'model': '4室2厅',
+ 'name': '帅府园二期 ',
+ 'perfect': '精装',
+ 'price_list': '61,856元/平',
+ 'total_list': '990'}
+2022-07-26 15:11:16 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-4: ordinal not in range(256)
+2022-07-26 15:11:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '通瑞嘉苑',
+ 'area': '127.76平米',
+ 'direction': '东 南 北',
+ 'floor': '高楼层(共26层)',
+ 'model': '3室1厅',
+ 'name': '通瑞嘉苑 ',
+ 'perfect': '精装',
+ 'price_list': '44,615元/平',
+ 'total_list': '570'}
+2022-07-26 15:11:16 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2022-07-26 15:11:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '东晶国际',
+ 'area': '135.91平米',
+ 'direction': '东 西',
+ 'floor': '5层',
+ 'model': '3室1厅',
+ 'name': '东晶国际 ',
+ 'perfect': '其他',
+ 'price_list': '48,562元/平',
+ 'total_list': '660'}
+2022-07-26 15:11:16 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2022-07-26 15:11:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '奈伦熙府',
+ 'area': '144.27平米',
+ 'direction': '南 北',
+ 'floor': '中楼层(共18层)',
+ 'model': '3室1厅',
+ 'name': '奈伦熙府 ',
+ 'perfect': '精装',
+ 'price_list': '60,997元/平',
+ 'total_list': '880'}
+2022-07-26 15:11:16 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2022-07-26 15:11:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '润泽公馆',
+ 'area': '179平米',
+ 'direction': '南 北',
+ 'floor': '低楼层(共24层)',
+ 'model': '4室2厅',
+ 'name': '润泽公馆 ',
+ 'perfect': '精装',
+ 'price_list': '93,017元/平',
+ 'total_list': '1665'}
+2022-07-26 15:11:16 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2022-07-26 15:11:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '天通苑本三区',
+ 'area': '132.14平米',
+ 'direction': '南 北',
+ 'floor': '底层(共6层)',
+ 'model': '3室1厅',
+ 'name': '天通苑本三区 ',
+ 'perfect': '精装',
+ 'price_list': '45,104元/平',
+ 'total_list': '596'}
+2022-07-26 15:11:16 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-5: ordinal not in range(256)
+2022-07-26 15:11:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '金隅丽港城',
+ 'area': '133.75平米',
+ 'direction': '西南',
+ 'floor': '中楼层(共26层)',
+ 'model': '3室1厅',
+ 'name': '金隅丽港城 ',
+ 'perfect': '精装',
+ 'price_list': '83,739元/平',
+ 'total_list': '1120'}
+2022-07-26 15:11:16 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-4: ordinal not in range(256)
+2022-07-26 15:11:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '天通苑北一区',
+ 'area': '144.95平米',
+ 'direction': '东南',
+ 'floor': '中楼层(共18层)',
+ 'model': '3室1厅',
+ 'name': '天通苑北一区 ',
+ 'perfect': '精装',
+ 'price_list': '41,325元/平',
+ 'total_list': '599'}
+2022-07-26 15:11:16 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-5: ordinal not in range(256)
+2022-07-26 15:11:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '武圣东里',
+ 'area': '81.3平米',
+ 'direction': '南 西 北',
+ 'floor': '17层',
+ 'model': '3室1厅',
+ 'name': '武圣东里 ',
+ 'perfect': '精装',
+ 'price_list': '55,966元/平',
+ 'total_list': '455'}
+2022-07-26 15:11:16 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2022-07-26 15:11:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '丽景长安二期',
+ 'area': '154.95平米',
+ 'direction': '南 北',
+ 'floor': '顶层(共23层)',
+ 'model': '4室2厅',
+ 'name': '丽景长安二期 ',
+ 'perfect': '精装',
+ 'price_list': '41,950元/平',
+ 'total_list': '650'}
+2022-07-26 15:11:16 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-5: ordinal not in range(256)
+2022-07-26 15:11:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '万科紫苑',
+ 'area': '160.59平米',
+ 'direction': '北 南',
+ 'floor': '中楼层(共15层)',
+ 'model': '3室1厅',
+ 'name': '万科紫苑 ',
+ 'perfect': '精装',
+ 'price_list': '79,707元/平',
+ 'total_list': '1280'}
+2022-07-26 15:11:16 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2022-07-26 15:11:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '慧时欣园二期',
+ 'area': '102.09平米',
+ 'direction': '西南',
+ 'floor': '24层',
+ 'model': '2室2厅',
+ 'name': '慧时欣园二期 ',
+ 'perfect': '简装',
+ 'price_list': '60,241元/平',
+ 'total_list': '615'}
+2022-07-26 15:11:16 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-5: ordinal not in range(256)
+2022-07-26 15:11:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '东湖湾二期',
+ 'area': '178.08平米',
+ 'direction': '南 北',
+ 'floor': '高楼层(共21层)',
+ 'model': '3室2厅',
+ 'name': '东湖湾二期 ',
+ 'perfect': '精装',
+ 'price_list': '131,964元/平',
+ 'total_list': '2350'}
+2022-07-26 15:11:16 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-4: ordinal not in range(256)
+2022-07-26 15:11:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '至善家园',
+ 'area': '135.27平米',
+ 'direction': '南 北',
+ 'floor': '底层(共6层)',
+ 'model': '3室2厅',
+ 'name': '至善家园 ',
+ 'perfect': '其他',
+ 'price_list': '45,835元/平',
+ 'total_list': '620'}
+2022-07-26 15:11:16 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2022-07-26 15:11:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '首邑上城',
+ 'area': '139.46平米',
+ 'direction': '南 北',
+ 'floor': '低楼层(共15层)',
+ 'model': '3室2厅',
+ 'name': '首邑上城 ',
+ 'perfect': '精装',
+ 'price_list': '46,752元/平',
+ 'total_list': '652'}
+2022-07-26 15:11:16 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2022-07-26 15:11:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '远洋山水',
+ 'area': '135.21平米',
+ 'direction': '东南',
+ 'floor': '26层',
+ 'model': '3室2厅',
+ 'name': '远洋山水 ',
+ 'perfect': '精装',
+ 'price_list': '78,989元/平',
+ 'total_list': '1068'}
+2022-07-26 15:11:16 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2022-07-26 15:11:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '金汉绿港四区',
+ 'area': '127平米',
+ 'direction': '南 北',
+ 'floor': '中楼层(共20层)',
+ 'model': '3室2厅',
+ 'name': '金汉绿港四区 ',
+ 'perfect': '简装',
+ 'price_list': '37,796元/平',
+ 'total_list': '480'}
+2022-07-26 15:11:16 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-5: ordinal not in range(256)
+2022-07-26 15:11:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '北京华侨城2号院',
+ 'area': '137.6平米',
+ 'direction': '南 北',
+ 'floor': '14层',
+ 'model': '3室2厅',
+ 'name': '北京华侨城2号院 ',
+ 'perfect': '其他',
+ 'price_list': '79,942元/平',
+ 'total_list': '1100'}
+2022-07-26 15:11:16 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-4: ordinal not in range(256)
+2022-07-26 15:11:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '观巢',
+ 'area': '199.38平米',
+ 'direction': '西南',
+ 'floor': '中楼层(共22层)',
+ 'model': '3室2厅',
+ 'name': '观巢 ',
+ 'perfect': '精装',
+ 'price_list': '72,726元/平',
+ 'total_list': '1450'}
+2022-07-26 15:11:16 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-1: ordinal not in range(256)
+2022-07-26 15:11:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '金隅七零九零',
+ 'area': '139.37平米',
+ 'direction': '南 北',
+ 'floor': '15层',
+ 'model': '3室2厅',
+ 'name': '金隅七零九零 ',
+ 'perfect': '精装',
+ 'price_list': '43,769元/平',
+ 'total_list': '610'}
+2022-07-26 15:11:16 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-5: ordinal not in range(256)
+2022-07-26 15:11:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '天通苑北一区',
+ 'area': '113.55平米',
+ 'direction': '东南',
+ 'floor': '中楼层(共29层)',
+ 'model': '3室1厅',
+ 'name': '天通苑北一区 ',
+ 'perfect': '精装',
+ 'price_list': '43,065元/平',
+ 'total_list': '489'}
+2022-07-26 15:11:16 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-5: ordinal not in range(256)
+2022-07-26 15:11:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '碧水云天',
+ 'area': '181.47平米',
+ 'direction': '南 北',
+ 'floor': '高楼层(共12层)',
+ 'model': '4室2厅',
+ 'name': '碧水云天 ',
+ 'perfect': '简装',
+ 'price_list': '179,645元/平',
+ 'total_list': '3260'}
+2022-07-26 15:11:16 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2022-07-26 15:11:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '富力城A区',
+ 'area': '96.81平米',
+ 'direction': '南',
+ 'floor': '28层',
+ 'model': '2室1厅',
+ 'name': '富力城A区 ',
+ 'perfect': '精装',
+ 'price_list': '115,691元/平',
+ 'total_list': '1120'}
+2022-07-26 15:11:16 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-2: ordinal not in range(256)
+2022-07-26 15:11:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '天天家园',
+ 'area': '160.63平米',
+ 'direction': '南 北',
+ 'floor': '10层',
+ 'model': '3室2厅',
+ 'name': '天天家园 ',
+ 'perfect': '精装',
+ 'price_list': '87,095元/平',
+ 'total_list': '1399'}
+2022-07-26 15:11:16 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2022-07-26 15:11:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '风林绿洲',
+ 'area': '171.38平米',
+ 'direction': '东南',
+ 'floor': '低楼层(共24层)',
+ 'model': '3室1厅',
+ 'name': '风林绿洲 ',
+ 'perfect': '简装',
+ 'price_list': '84,608元/平',
+ 'total_list': '1450'}
+2022-07-26 15:11:16 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2022-07-26 15:11:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '宜山居',
+ 'area': '136.89平米',
+ 'direction': '南 北',
+ 'floor': '5层',
+ 'model': '3室2厅',
+ 'name': '宜山居 ',
+ 'perfect': '精装',
+ 'price_list': '32,874元/平',
+ 'total_list': '450'}
+2022-07-26 15:11:16 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-2: ordinal not in range(256)
+2022-07-26 15:11:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/ershoufang/pg3/> (referer: https://bj.lianjia.com/ershoufang/pg2/)
+2022-07-26 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '吉庆里西区',
+ 'area': '108.77平米',
+ 'direction': '南 北',
+ 'floor': '底层(共10层)',
+ 'model': '3室1厅',
+ 'name': '吉庆里西区 ',
+ 'perfect': '精装',
+ 'price_list': '99,844元/平',
+ 'total_list': '1086'}
+2022-07-26 15:11:19 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-4: ordinal not in range(256)
+2022-07-26 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '北亚花园',
+ 'area': '86.75平米',
+ 'direction': '南 北',
+ 'floor': '中楼层(共7层)',
+ 'model': '2室1厅',
+ 'name': '北亚花园 ',
+ 'perfect': '简装',
+ 'price_list': '37,119元/平',
+ 'total_list': '322'}
+2022-07-26 15:11:19 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2022-07-26 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '苹果派',
+ 'area': '77.5平米',
+ 'direction': '西北',
+ 'floor': '中楼层(共10层)',
+ 'model': '2室2厅',
+ 'name': '苹果派 ',
+ 'perfect': '简装',
+ 'price_list': '61,678元/平',
+ 'total_list': '478'}
+2022-07-26 15:11:19 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-2: ordinal not in range(256)
+2022-07-26 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '苹果派',
+ 'area': '77.91平米',
+ 'direction': '西北',
+ 'floor': '高楼层(共10层)',
+ 'model': '2室1厅',
+ 'name': '苹果派 ',
+ 'perfect': '精装',
+ 'price_list': '61,867元/平',
+ 'total_list': '482'}
+2022-07-26 15:11:19 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-2: ordinal not in range(256)
+2022-07-26 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '太平桥西里',
+ 'area': '52.47平米',
+ 'direction': '南',
+ 'floor': '中楼层(共6层)',
+ 'model': '2室1厅',
+ 'name': '太平桥西里 ',
+ 'perfect': '简装',
+ 'price_list': '67,086元/平',
+ 'total_list': '352'}
+2022-07-26 15:11:19 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-4: ordinal not in range(256)
+2022-07-26 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '金海国际南区',
+ 'area': '108.99平米',
+ 'direction': '东',
+ 'floor': '中楼层(共23层)',
+ 'model': '2室1厅',
+ 'name': '金海国际南区 ',
+ 'perfect': '精装',
+ 'price_list': '63,309元/平',
+ 'total_list': '690'}
+2022-07-26 15:11:19 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-5: ordinal not in range(256)
+2022-07-26 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '南竹杆胡同',
+ 'area': '72平米',
+ 'direction': '南 北',
+ 'floor': '低楼层(共6层)',
+ 'model': '2室1厅',
+ 'name': '南竹杆胡同 ',
+ 'perfect': '精装',
+ 'price_list': '124,862元/平',
+ 'total_list': '899'}
+2022-07-26 15:11:19 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-4: ordinal not in range(256)
+2022-07-26 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '益丰园',
+ 'area': '56.12平米',
+ 'direction': '南 北 西',
+ 'floor': '高楼层(共6层)',
+ 'model': '2室1厅',
+ 'name': '益丰园 ',
+ 'perfect': '简装',
+ 'price_list': '49,537元/平',
+ 'total_list': '278'}
+2022-07-26 15:11:19 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-2: ordinal not in range(256)
+2022-07-26 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '东南小区',
+ 'area': '58.9平米',
+ 'direction': '南 北',
+ 'floor': '顶层(共6层)',
+ 'model': '2室1厅',
+ 'name': '东南小区 ',
+ 'perfect': '精装',
+ 'price_list': '147,708元/平',
+ 'total_list': '870'}
+2022-07-26 15:11:19 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2022-07-26 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '中信沁园',
+ 'area': '95.74平米',
+ 'direction': '东 西',
+ 'floor': '低楼层(共20层)',
+ 'model': '2室1厅',
+ 'name': '中信沁园 ',
+ 'perfect': '简装',
+ 'price_list': '170,253元/平',
+ 'total_list': '1630'}
+2022-07-26 15:11:19 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2022-07-26 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '永乐西区',
+ 'area': '59.56平米',
+ 'direction': '南 北',
+ 'floor': '顶层(共6层)',
+ 'model': '2室1厅',
+ 'name': '永乐西区 ',
+ 'perfect': '精装',
+ 'price_list': '43,654元/平',
+ 'total_list': '260'}
+2022-07-26 15:11:19 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2022-07-26 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '玉海园一里',
+ 'area': '60.6平米',
+ 'direction': '南 北',
+ 'floor': '低楼层(共6层)',
+ 'model': '2室1厅',
+ 'name': '玉海园一里 ',
+ 'perfect': '简装',
+ 'price_list': '98,845元/平',
+ 'total_list': '599'}
+2022-07-26 15:11:19 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-4: ordinal not in range(256)
+2022-07-26 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '石园北区',
+ 'area': '90.67平米',
+ 'direction': '南 北',
+ 'floor': '顶层(共6层)',
+ 'model': '2室2厅',
+ 'name': '石园北区 ',
+ 'perfect': '简装',
+ 'price_list': '30,330元/平',
+ 'total_list': '275'}
+2022-07-26 15:11:19 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2022-07-26 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '天润福熙大道',
+ 'area': '140.66平米',
+ 'direction': '东 南 北',
+ 'floor': '低楼层(共26层)',
+ 'model': '3室2厅',
+ 'name': '天润福熙大道 ',
+ 'perfect': '精装',
+ 'price_list': '105,219元/平',
+ 'total_list': '1480'}
+2022-07-26 15:11:19 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-5: ordinal not in range(256)
+2022-07-26 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '古城路小区',
+ 'area': '50.84平米',
+ 'direction': '南 北',
+ 'floor': '底层(共4层)',
+ 'model': '2室0厅',
+ 'name': '古城路小区 ',
+ 'perfect': '简装',
+ 'price_list': '42,880元/平',
+ 'total_list': '218'}
+2022-07-26 15:11:19 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-4: ordinal not in range(256)
+2022-07-26 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '中泽雅园',
+ 'area': '66.29平米',
+ 'direction': '南 北',
+ 'floor': '中楼层(共6层)',
+ 'model': '2室1厅',
+ 'name': '中泽雅园 ',
+ 'perfect': '精装',
+ 'price_list': '40,731元/平',
+ 'total_list': '270'}
+2022-07-26 15:11:19 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2022-07-26 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '蒲安东里',
+ 'area': '62平米',
+ 'direction': '南 西',
+ 'floor': '高楼层(共18层)',
+ 'model': '2室1厅',
+ 'name': '蒲安东里 ',
+ 'perfect': '简装',
+ 'price_list': '65,323元/平',
+ 'total_list': '405'}
+2022-07-26 15:11:19 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2022-07-26 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': 'M5朗峰',
+ 'area': '57.2平米',
+ 'direction': '东',
+ 'floor': '中楼层(共10层)',
+ 'model': '2室1厅',
+ 'name': 'M5朗峰 ',
+ 'perfect': '精装',
+ 'price_list': '62,588元/平',
+ 'total_list': '358'}
+2022-07-26 15:11:19 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 2-3: ordinal not in range(256)
+2022-07-26 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '滨河坊',
+ 'area': '81.45平米',
+ 'direction': '东 西',
+ 'floor': '底层(共6层)',
+ 'model': '2室1厅',
+ 'name': '滨河坊 ',
+ 'perfect': '简装',
+ 'price_list': '32,045元/平',
+ 'total_list': '261'}
+2022-07-26 15:11:19 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-2: ordinal not in range(256)
+2022-07-26 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '梅兰居',
+ 'area': '65.41平米',
+ 'direction': '南',
+ 'floor': '高楼层(共16层)',
+ 'model': '1室1厅',
+ 'name': '梅兰居 ',
+ 'perfect': '简装',
+ 'price_list': '36,386元/平',
+ 'total_list': '238'}
+2022-07-26 15:11:19 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-2: ordinal not in range(256)
+2022-07-26 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '天桥北里',
+ 'area': '79.2平米',
+ 'direction': '西南',
+ 'floor': '中楼层(共12层)',
+ 'model': '2室1厅',
+ 'name': '天桥北里 ',
+ 'perfect': '简装',
+ 'price_list': '93,435元/平',
+ 'total_list': '740'}
+2022-07-26 15:11:19 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2022-07-26 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '冠英园小区',
+ 'area': '112.2平米',
+ 'direction': '南 北',
+ 'floor': '中楼层(共10层)',
+ 'model': '2室1厅',
+ 'name': '冠英园小区 ',
+ 'perfect': '精装',
+ 'price_list': '135,473元/平',
+ 'total_list': '1520'}
+2022-07-26 15:11:19 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-4: ordinal not in range(256)
+2022-07-26 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '三里河一区3号院',
+ 'area': '105.5平米',
+ 'direction': '东南',
+ 'floor': '顶层(共18层)',
+ 'model': '2室1厅',
+ 'name': '三里河一区3号院 ',
+ 'perfect': '精装',
+ 'price_list': '161,138元/平',
+ 'total_list': '1700'}
+2022-07-26 15:11:19 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-4: ordinal not in range(256)
+2022-07-26 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '太平桥东里',
+ 'area': '58.4平米',
+ 'direction': '南 北',
+ 'floor': '中楼层(共6层)',
+ 'model': '2室1厅',
+ 'name': '太平桥东里 ',
+ 'perfect': '其他',
+ 'price_list': '68,322元/平',
+ 'total_list': '399'}
+2022-07-26 15:11:19 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-4: ordinal not in range(256)
+2022-07-26 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '安慧北里逸园',
+ 'area': '58.8平米',
+ 'direction': '南 北',
+ 'floor': '低楼层(共6层)',
+ 'model': '2室1厅',
+ 'name': '安慧北里逸园 ',
+ 'perfect': '精装',
+ 'price_list': '90,137元/平',
+ 'total_list': '530'}
+2022-07-26 15:11:19 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-5: ordinal not in range(256)
+2022-07-26 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '京通苑',
+ 'area': '63.36平米',
+ 'direction': '西南',
+ 'floor': '中楼层(共24层)',
+ 'model': '1室1厅',
+ 'name': '京通苑 ',
+ 'perfect': '精装',
+ 'price_list': '47,665元/平',
+ 'total_list': '302'}
+2022-07-26 15:11:19 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-2: ordinal not in range(256)
+2022-07-26 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '葡东小区',
+ 'area': '64.01平米',
+ 'direction': '南 西',
+ 'floor': '中楼层(共6层)',
+ 'model': '2室1厅',
+ 'name': '葡东小区 ',
+ 'perfect': '精装',
+ 'price_list': '37,182元/平',
+ 'total_list': '238'}
+2022-07-26 15:11:19 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-3: ordinal not in range(256)
+2022-07-26 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '杏林园',
+ 'area': '110.57平米',
+ 'direction': '东南',
+ 'floor': '18层',
+ 'model': '3室1厅',
+ 'name': '杏林园 ',
+ 'perfect': '简装',
+ 'price_list': '54,988元/平',
+ 'total_list': '608'}
+2022-07-26 15:11:19 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-2: ordinal not in range(256)
+2022-07-26 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '富力惠兰美居',
+ 'area': '67.6平米',
+ 'direction': '南',
+ 'floor': '中楼层(共28层)',
+ 'model': '2室1厅',
+ 'name': '富力惠兰美居 ',
+ 'perfect': '精装',
+ 'price_list': '39,645元/平',
+ 'total_list': '268'}
+2022-07-26 15:11:19 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-5: ordinal not in range(256)
+2022-07-26 15:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '华远铭悦园',
+ 'area': '73.9平米',
+ 'direction': '南 北',
+ 'floor': '27层',
+ 'model': '2室1厅',
+ 'name': '华远铭悦园 ',
+ 'perfect': '精装',
+ 'price_list': '40,867元/平',
+ 'total_list': '302'}
+2022-07-26 15:11:19 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002C8543A48B0>>
+Traceback (most recent call last):
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\utils\defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\extensions\feedexport.py", line 429, in item_scraped
+    slot.exporter.export_item(item)
+  File "D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\exporters.py", line 235, in export_item
+    self.csv_writer.writerow(values)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-4: ordinal not in range(256)
+2022-07-26 15:11:19 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-07-26 15:11:19 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1192,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 3,
+ 'downloader/response_bytes': 94712,
+ 'downloader/response_count': 3,
+ 'downloader/response_status_count/200': 3,
+ 'elapsed_time_seconds': 6.005853,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 7, 26, 7, 11, 19, 540943),
+ 'httpcompression/response_bytes': 557730,
+ 'httpcompression/response_count': 3,
+ 'item_scraped_count': 90,
+ 'log_count/DEBUG': 98,
+ 'log_count/ERROR': 90,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 2,
+ 'response_received_count': 3,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2022, 7, 26, 7, 11, 13, 535090)}
+2022-07-26 15:11:19 [scrapy.core.engine] INFO: Spider closed (finished)
+2022-07-26 15:11:49 [scrapy.utils.log] INFO: Scrapy 2.6.1 started (bot: Lianjiahouse)
+2022-07-26 15:11:49 [scrapy.utils.log] INFO: Versions: lxml 4.8.0.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 22.4.0, Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 3.0.3 3 May 2022), cryptography 37.0.2, Platform Windows-10-10.0.17763-SP0
+2022-07-26 15:11:49 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'Lianjiahouse',
+ 'DOWNLOAD_DELAY': 2,
+ 'FEED_EXPORT_ENCODING': 'GBK',
+ 'LOG_FILE': 'lianjia.log',
+ 'NEWSPIDER_MODULE': 'Lianjiahouse.spiders',
+ 'SPIDER_MODULES': ['Lianjiahouse.spiders']}
+2022-07-26 15:11:49 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2022-07-26 15:11:49 [scrapy.extensions.telnet] INFO: Telnet Password: abd676bbb82cca56
+2022-07-26 15:11:49 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2022-07-26 15:11:49 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-07-26 15:11:49 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-07-26 15:11:49 [scrapy.middleware] INFO: Enabled item pipelines:
+['Lianjiahouse.pipelines.LianjiahouseMysqlPipeline',
+ 'Lianjiahouse.pipelines.LianjiahousePipeline']
+2022-07-26 15:11:49 [scrapy.core.engine] INFO: Spider opened
+2022-07-26 15:11:50 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-07-26 15:11:50 [py.warnings] WARNING: D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py:65: URLWarning: allowed_domains accepts only domains, not URLs. Ignoring URL entry https://bj.lianjia.com/ershoufang/pg2/ in allowed_domains.
+  warnings.warn(message, URLWarning)
+
+2022-07-26 15:11:50 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-07-26 15:11:50 [filelock] DEBUG: Attempting to acquire lock 2488515474816 on D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-07-26 15:11:50 [filelock] DEBUG: Lock 2488515474816 acquired on D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-07-26 15:11:50 [filelock] DEBUG: Attempting to release lock 2488515474816 on D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-07-26 15:11:50 [filelock] DEBUG: Lock 2488515474816 released on D:\庄鑫灿\PYTHON-爬虫\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-07-26 15:11:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/ershoufang/pg1/> (referer: None)
+2022-07-26 15:11:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '世纪星城',
+ 'area': '92.2平米',
+ 'direction': '南 北',
+ 'floor': '高楼层(共10层)',
+ 'model': '4室2厅',
+ 'name': '世纪星城 ',
+ 'perfect': '简装',
+ 'price_list': '59,653元/平',
+ 'total_list': '550'}
+2022-07-26 15:11:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '富锦嘉园五区',
+ 'area': '93.83平米',
+ 'direction': '南 北',
+ 'floor': '顶层(共6层)',
+ 'model': '2室1厅',
+ 'name': '富锦嘉园五区 ',
+ 'perfect': '精装',
+ 'price_list': '59,683元/平',
+ 'total_list': '560'}
+2022-07-26 15:11:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '长城国际',
+ 'area': '48.52平米',
+ 'direction': '东',
+ 'floor': '22层',
+ 'model': '1室0厅',
+ 'name': '长城国际 ',
+ 'perfect': '精装',
+ 'price_list': '38,747元/平',
+ 'total_list': '188'}
+2022-07-26 15:11:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '绿岛苑西区',
+ 'area': '96.05平米',
+ 'direction': '西南',
+ 'floor': '高楼层(共24层)',
+ 'model': '3室1厅',
+ 'name': '绿岛苑西区 ',
+ 'perfect': '简装',
+ 'price_list': '46,331元/平',
+ 'total_list': '445'}
+2022-07-26 15:11:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '天伦锦城',
+ 'area': '111.34平米',
+ 'direction': '南 北',
+ 'floor': '低楼层(共13层)',
+ 'model': '3室1厅',
+ 'name': '天伦锦城 ',
+ 'perfect': '精装',
+ 'price_list': '47,243元/平',
+ 'total_list': '526'}
+2022-07-26 15:11:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '天通苑北二区',
+ 'area': '236.02平米',
+ 'direction': '南 北',
+ 'floor': '底层(共13层)',
+ 'model': '4室2厅',
+ 'name': '天通苑北二区 ',
+ 'perfect': '精装',
+ 'price_list': '26,269元/平',
+ 'total_list': '620'}
+2022-07-26 15:11:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '京杭府',
+ 'area': '181.78平米',
+ 'direction': '南 北',
+ 'floor': '低楼层(共36层)',
+ 'model': '3室2厅',
+ 'name': '京杭府 ',
+ 'perfect': '精装',
+ 'price_list': '51,711元/平',
+ 'total_list': '940'}
+2022-07-26 15:11:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '东潞苑',
+ 'area': '121.65平米',
+ 'direction': '南 北',
+ 'floor': '中楼层(共6层)',
+ 'model': '2室1厅',
+ 'name': '东潞苑 ',
+ 'perfect': '简装',
+ 'price_list': '26,141元/平',
+ 'total_list': '318'}
+2022-07-26 15:11:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '北京洋房',
+ 'area': '163.16平米',
+ 'direction': '南 北',
+ 'floor': '中楼层(共5层)',
+ 'model': '3室2厅',
+ 'name': '北京洋房 ',
+ 'perfect': '简装',
+ 'price_list': '41,555元/平',
+ 'total_list': '678'}
+2022-07-26 15:11:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '中海紫御公馆',
+ 'area': '207.44平米',
+ 'direction': '南 北 西',
+ 'floor': '低楼层(共21层)',
+ 'model': '4室2厅',
+ 'name': '中海紫御公馆 ',
+ 'perfect': '精装',
+ 'price_list': '134,979元/平',
+ 'total_list': '2800'}
+2022-07-26 15:11:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '松榆西里',
+ 'area': '79.78平米',
+ 'direction': '东南',
+ 'floor': '高楼层(共18层)',
+ 'model': '3室1厅',
+ 'name': '松榆西里 ',
+ 'perfect': '简装',
+ 'price_list': '68,439元/平',
+ 'total_list': '546'}
+2022-07-26 15:11:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '车站西街9号院',
+ 'area': '93.49平米',
+ 'direction': '南 北',
+ 'floor': '高楼层(共6层)',
+ 'model': '3室1厅',
+ 'name': '车站西街9号院 ',
+ 'perfect': '简装',
+ 'price_list': '108,996元/平',
+ 'total_list': '1019'}
+2022-07-26 15:11:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '清缘里中区',
+ 'area': '86.69平米',
+ 'direction': '东南',
+ 'floor': '中楼层(共13层)',
+ 'model': '2室1厅',
+ 'name': '清缘里中区 ',
+ 'perfect': '简装',
+ 'price_list': '65,752元/平',
+ 'total_list': '570'}
+2022-07-26 15:11:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '恒盛小镇艺墅',
+ 'area': '88.33平米',
+ 'direction': '南 北',
+ 'floor': '中楼层(共11层)',
+ 'model': '2室1厅',
+ 'name': '恒盛小镇艺墅 ',
+ 'perfect': '简装',
+ 'price_list': '23,775元/平',
+ 'total_list': '210'}
+2022-07-26 15:11:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '观湖国际',
+ 'area': '266.26平米',
+ 'direction': '南 北',
+ 'floor': '高楼层(共27层)',
+ 'model': '4室2厅',
+ 'name': '观湖国际 ',
+ 'perfect': '精装',
+ 'price_list': '105,161元/平',
+ 'total_list': '2800'}
+2022-07-26 15:11:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '益明园',
+ 'area': '108.68平米',
+ 'direction': '南 北',
+ 'floor': '高楼层(共11层)',
+ 'model': '3室2厅',
+ 'name': '益明园 ',
+ 'perfect': '精装',
+ 'price_list': '91,830元/平',
+ 'total_list': '998'}
+2022-07-26 15:11:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '西成忆树',
+ 'area': '148.82平米',
+ 'direction': '南 北',
+ 'floor': '中楼层(共18层)',
+ 'model': '3室2厅',
+ 'name': '西成忆树 ',
+ 'perfect': '精装',
+ 'price_list': '48,381元/平',
+ 'total_list': '720'}
+2022-07-26 15:11:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '久敬佳园一区',
+ 'area': '99.6平米',
+ 'direction': '南 北',
+ 'floor': '中楼层(共6层)',
+ 'model': '2室2厅',
+ 'name': '久敬佳园一区 ',
+ 'perfect': '精装',
+ 'price_list': '52,511元/平',
+ 'total_list': '523'}
+2022-07-26 15:11:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '香悦四季',
+ 'area': '136.21平米',
+ 'direction': '南 北',
+ 'floor': '中楼层(共11层)',
+ 'model': '4室2厅',
+ 'name': '香悦四季 ',
+ 'perfect': '精装',
+ 'price_list': '37,369元/平',
+ 'total_list': '509'}
+2022-07-26 15:11:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '天通苑北一区',
+ 'area': '106.41平米',
+ 'direction': '南',
+ 'floor': '低楼层(共13层)',
+ 'model': '2室2厅',
+ 'name': '天通苑北一区 ',
+ 'perfect': '精装',
+ 'price_list': '46,049元/平',
+ 'total_list': '490'}
+2022-07-26 15:11:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '风景club',
+ 'area': '139.01平米',
+ 'direction': '西北',
+ 'floor': '中楼层(共15层)',
+ 'model': '3室2厅',
+ 'name': '风景club ',
+ 'perfect': '毛坯',
+ 'price_list': '64,025元/平',
+ 'total_list': '890'}
+2022-07-26 15:11:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '风格与林苑',
+ 'area': '178.28平米',
+ 'direction': '南 北',
+ 'floor': '中楼层(共4层)',
+ 'model': '4室1厅',
+ 'name': '风格与林苑 ',
+ 'perfect': '简装',
+ 'price_list': '46,444元/平',
+ 'total_list': '828'}
+2022-07-26 15:11:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '万泉新新家园',
+ 'area': '175.09平米',
+ 'direction': '南 北',
+ 'floor': '中楼层(共6层)',
+ 'model': '3室2厅',
+ 'name': '万泉新新家园 ',
+ 'perfect': '精装',
+ 'price_list': '162,774元/平',
+ 'total_list': '2850'}
+2022-07-26 15:11:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '香花畦家园',
+ 'area': '168.48平米',
+ 'direction': '南 北',
+ 'floor': '中楼层(共8层)',
+ 'model': '4室2厅',
+ 'name': '香花畦家园 ',
+ 'perfect': '精装',
+ 'price_list': '43,923元/平',
+ 'total_list': '740'}
+2022-07-26 15:11:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '本家润园一期',
+ 'area': '191.65平米',
+ 'direction': '南 北',
+ 'floor': '中楼层(共13层)',
+ 'model': '3室2厅',
+ 'name': '本家润园一期 ',
+ 'perfect': '精装',
+ 'price_list': '123,663元/平',
+ 'total_list': '2370'}
+2022-07-26 15:11:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '风格雅园',
+ 'area': '150.97平米',
+ 'direction': '南 北',
+ 'floor': '高楼层(共17层)',
+ 'model': '3室2厅',
+ 'name': '风格雅园 ',
+ 'perfect': '精装',
+ 'price_list': '79,486元/平',
+ 'total_list': '1200'}
+2022-07-26 15:11:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '合生国际花园',
+ 'area': '137.56平米',
+ 'direction': '南 北',
+ 'floor': '24层',
+ 'model': '3室2厅',
+ 'name': '合生国际花园 ',
+ 'perfect': '精装',
+ 'price_list': '106,063元/平',
+ 'total_list': '1459'}
+2022-07-26 15:11:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '金港国际',
+ 'area': '152.13平米',
+ 'direction': '南 北',
+ 'floor': '9层',
+ 'model': '4室2厅',
+ 'name': '金港国际 ',
+ 'perfect': '精装',
+ 'price_list': '95,905元/平',
+ 'total_list': '1459'}
+2022-07-26 15:11:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '远洋一方润园2号院',
+ 'area': '143.75平米',
+ 'direction': '南 北',
+ 'floor': '低楼层(共6层)',
+ 'model': '3室1厅',
+ 'name': '远洋一方润园2号院 ',
+ 'perfect': '精装',
+ 'price_list': '62,540元/平',
+ 'total_list': '899'}
+2022-07-26 15:11:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg1/>
+{'address': '嘉华世纪公寓',
+ 'area': '92.47平米',
+ 'direction': '南',
+ 'floor': '低楼层(共18层)',
+ 'model': '1室1厅',
+ 'name': '嘉华世纪公寓 ',
+ 'perfect': '精装',
+ 'price_list': '64,876元/平',
+ 'total_list': '599.9'}
+2022-07-26 15:11:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/ershoufang/pg2/> (referer: https://bj.lianjia.com/ershoufang/pg1/)
+2022-07-26 15:11:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '朝阳门北小街',
+ 'area': '117.07平米',
+ 'direction': '南 北',
+ 'floor': '顶层(共6层)',
+ 'model': '4室2厅',
+ 'name': '朝阳门北小街 ',
+ 'perfect': '精装',
+ 'price_list': '106,774元/平',
+ 'total_list': '1250'}
+2022-07-26 15:11:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '盛景嘉园',
+ 'area': '181.44平米',
+ 'direction': '南 北',
+ 'floor': '7层',
+ 'model': '4室2厅',
+ 'name': '盛景嘉园 ',
+ 'perfect': '简装',
+ 'price_list': '132,276元/平',
+ 'total_list': '2400'}
+2022-07-26 15:11:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '天通苑北三区',
+ 'area': '129.05平米',
+ 'direction': '南 北',
+ 'floor': '中楼层(共7层)',
+ 'model': '3室2厅',
+ 'name': '天通苑北三区 ',
+ 'perfect': '简装',
+ 'price_list': '44,169元/平',
+ 'total_list': '570'}
+2022-07-26 15:11:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '泰和宜园',
+ 'area': '138.91平米',
+ 'direction': '南 北',
+ 'floor': '低楼层(共11层)',
+ 'model': '3室2厅',
+ 'name': '泰和宜园 ',
+ 'perfect': '精装',
+ 'price_list': '31,316元/平',
+ 'total_list': '435'}
+2022-07-26 15:11:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '帅府园二期',
+ 'area': '160.05平米',
+ 'direction': '南 北',
+ 'floor': '低楼层(共21层)',
+ 'model': '4室2厅',
+ 'name': '帅府园二期 ',
+ 'perfect': '精装',
+ 'price_list': '61,856元/平',
+ 'total_list': '990'}
+2022-07-26 15:11:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '通瑞嘉苑',
+ 'area': '127.76平米',
+ 'direction': '东 南 北',
+ 'floor': '高楼层(共26层)',
+ 'model': '3室1厅',
+ 'name': '通瑞嘉苑 ',
+ 'perfect': '精装',
+ 'price_list': '44,615元/平',
+ 'total_list': '570'}
+2022-07-26 15:11:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '东晶国际',
+ 'area': '135.91平米',
+ 'direction': '东 西',
+ 'floor': '5层',
+ 'model': '3室1厅',
+ 'name': '东晶国际 ',
+ 'perfect': '其他',
+ 'price_list': '48,562元/平',
+ 'total_list': '660'}
+2022-07-26 15:11:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '奈伦熙府',
+ 'area': '144.27平米',
+ 'direction': '南 北',
+ 'floor': '中楼层(共18层)',
+ 'model': '3室1厅',
+ 'name': '奈伦熙府 ',
+ 'perfect': '精装',
+ 'price_list': '60,997元/平',
+ 'total_list': '880'}
+2022-07-26 15:11:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '润泽公馆',
+ 'area': '179平米',
+ 'direction': '南 北',
+ 'floor': '低楼层(共24层)',
+ 'model': '4室2厅',
+ 'name': '润泽公馆 ',
+ 'perfect': '精装',
+ 'price_list': '93,017元/平',
+ 'total_list': '1665'}
+2022-07-26 15:11:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '天通苑本三区',
+ 'area': '132.14平米',
+ 'direction': '南 北',
+ 'floor': '底层(共6层)',
+ 'model': '3室1厅',
+ 'name': '天通苑本三区 ',
+ 'perfect': '精装',
+ 'price_list': '45,104元/平',
+ 'total_list': '596'}
+2022-07-26 15:11:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '金隅丽港城',
+ 'area': '133.75平米',
+ 'direction': '西南',
+ 'floor': '中楼层(共26层)',
+ 'model': '3室1厅',
+ 'name': '金隅丽港城 ',
+ 'perfect': '精装',
+ 'price_list': '83,739元/平',
+ 'total_list': '1120'}
+2022-07-26 15:11:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '天通苑北一区',
+ 'area': '144.95平米',
+ 'direction': '东南',
+ 'floor': '中楼层(共18层)',
+ 'model': '3室1厅',
+ 'name': '天通苑北一区 ',
+ 'perfect': '精装',
+ 'price_list': '41,325元/平',
+ 'total_list': '599'}
+2022-07-26 15:11:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '武圣东里',
+ 'area': '81.3平米',
+ 'direction': '南 西 北',
+ 'floor': '17层',
+ 'model': '3室1厅',
+ 'name': '武圣东里 ',
+ 'perfect': '精装',
+ 'price_list': '55,966元/平',
+ 'total_list': '455'}
+2022-07-26 15:11:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '丽景长安二期',
+ 'area': '154.95平米',
+ 'direction': '南 北',
+ 'floor': '顶层(共23层)',
+ 'model': '4室2厅',
+ 'name': '丽景长安二期 ',
+ 'perfect': '精装',
+ 'price_list': '41,950元/平',
+ 'total_list': '650'}
+2022-07-26 15:11:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '万科紫苑',
+ 'area': '160.59平米',
+ 'direction': '北 南',
+ 'floor': '中楼层(共15层)',
+ 'model': '3室1厅',
+ 'name': '万科紫苑 ',
+ 'perfect': '精装',
+ 'price_list': '79,707元/平',
+ 'total_list': '1280'}
+2022-07-26 15:11:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '慧时欣园二期',
+ 'area': '102.09平米',
+ 'direction': '西南',
+ 'floor': '24层',
+ 'model': '2室2厅',
+ 'name': '慧时欣园二期 ',
+ 'perfect': '简装',
+ 'price_list': '60,241元/平',
+ 'total_list': '615'}
+2022-07-26 15:11:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '东湖湾二期',
+ 'area': '178.08平米',
+ 'direction': '南 北',
+ 'floor': '高楼层(共21层)',
+ 'model': '3室2厅',
+ 'name': '东湖湾二期 ',
+ 'perfect': '精装',
+ 'price_list': '131,964元/平',
+ 'total_list': '2350'}
+2022-07-26 15:11:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '至善家园',
+ 'area': '135.27平米',
+ 'direction': '南 北',
+ 'floor': '底层(共6层)',
+ 'model': '3室2厅',
+ 'name': '至善家园 ',
+ 'perfect': '其他',
+ 'price_list': '45,835元/平',
+ 'total_list': '620'}
+2022-07-26 15:11:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '首邑上城',
+ 'area': '139.46平米',
+ 'direction': '南 北',
+ 'floor': '低楼层(共15层)',
+ 'model': '3室2厅',
+ 'name': '首邑上城 ',
+ 'perfect': '精装',
+ 'price_list': '46,752元/平',
+ 'total_list': '652'}
+2022-07-26 15:11:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '远洋山水',
+ 'area': '135.21平米',
+ 'direction': '东南',
+ 'floor': '26层',
+ 'model': '3室2厅',
+ 'name': '远洋山水 ',
+ 'perfect': '精装',
+ 'price_list': '78,989元/平',
+ 'total_list': '1068'}
+2022-07-26 15:11:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '金汉绿港四区',
+ 'area': '127平米',
+ 'direction': '南 北',
+ 'floor': '中楼层(共20层)',
+ 'model': '3室2厅',
+ 'name': '金汉绿港四区 ',
+ 'perfect': '简装',
+ 'price_list': '37,796元/平',
+ 'total_list': '480'}
+2022-07-26 15:11:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '北京华侨城2号院',
+ 'area': '137.6平米',
+ 'direction': '南 北',
+ 'floor': '14层',
+ 'model': '3室2厅',
+ 'name': '北京华侨城2号院 ',
+ 'perfect': '其他',
+ 'price_list': '79,942元/平',
+ 'total_list': '1100'}
+2022-07-26 15:11:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '观巢',
+ 'area': '199.38平米',
+ 'direction': '西南',
+ 'floor': '中楼层(共22层)',
+ 'model': '3室2厅',
+ 'name': '观巢 ',
+ 'perfect': '精装',
+ 'price_list': '72,726元/平',
+ 'total_list': '1450'}
+2022-07-26 15:11:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '金隅七零九零',
+ 'area': '139.37平米',
+ 'direction': '南 北',
+ 'floor': '15层',
+ 'model': '3室2厅',
+ 'name': '金隅七零九零 ',
+ 'perfect': '精装',
+ 'price_list': '43,769元/平',
+ 'total_list': '610'}
+2022-07-26 15:11:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '天通苑北一区',
+ 'area': '113.55平米',
+ 'direction': '东南',
+ 'floor': '中楼层(共29层)',
+ 'model': '3室1厅',
+ 'name': '天通苑北一区 ',
+ 'perfect': '精装',
+ 'price_list': '43,065元/平',
+ 'total_list': '489'}
+2022-07-26 15:11:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '碧水云天',
+ 'area': '181.47平米',
+ 'direction': '南 北',
+ 'floor': '高楼层(共12层)',
+ 'model': '4室2厅',
+ 'name': '碧水云天 ',
+ 'perfect': '简装',
+ 'price_list': '179,645元/平',
+ 'total_list': '3260'}
+2022-07-26 15:11:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '富力城A区',
+ 'area': '96.81平米',
+ 'direction': '南',
+ 'floor': '28层',
+ 'model': '2室1厅',
+ 'name': '富力城A区 ',
+ 'perfect': '精装',
+ 'price_list': '115,691元/平',
+ 'total_list': '1120'}
+2022-07-26 15:11:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '天天家园',
+ 'area': '160.63平米',
+ 'direction': '南 北',
+ 'floor': '10层',
+ 'model': '3室2厅',
+ 'name': '天天家园 ',
+ 'perfect': '精装',
+ 'price_list': '87,095元/平',
+ 'total_list': '1399'}
+2022-07-26 15:11:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '风林绿洲',
+ 'area': '171.38平米',
+ 'direction': '东南',
+ 'floor': '低楼层(共24层)',
+ 'model': '3室1厅',
+ 'name': '风林绿洲 ',
+ 'perfect': '简装',
+ 'price_list': '84,608元/平',
+ 'total_list': '1450'}
+2022-07-26 15:11:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg2/>
+{'address': '宜山居',
+ 'area': '136.89平米',
+ 'direction': '南 北',
+ 'floor': '5层',
+ 'model': '3室2厅',
+ 'name': '宜山居 ',
+ 'perfect': '精装',
+ 'price_list': '32,874元/平',
+ 'total_list': '450'}
+2022-07-26 15:11:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bj.lianjia.com/ershoufang/pg3/> (referer: https://bj.lianjia.com/ershoufang/pg2/)
+2022-07-26 15:11:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '吉庆里西区',
+ 'area': '108.77平米',
+ 'direction': '南 北',
+ 'floor': '底层(共10层)',
+ 'model': '3室1厅',
+ 'name': '吉庆里西区 ',
+ 'perfect': '精装',
+ 'price_list': '99,844元/平',
+ 'total_list': '1086'}
+2022-07-26 15:11:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '北亚花园',
+ 'area': '86.75平米',
+ 'direction': '南 北',
+ 'floor': '中楼层(共7层)',
+ 'model': '2室1厅',
+ 'name': '北亚花园 ',
+ 'perfect': '简装',
+ 'price_list': '37,119元/平',
+ 'total_list': '322'}
+2022-07-26 15:11:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '苹果派',
+ 'area': '77.5平米',
+ 'direction': '西北',
+ 'floor': '中楼层(共10层)',
+ 'model': '2室2厅',
+ 'name': '苹果派 ',
+ 'perfect': '简装',
+ 'price_list': '61,678元/平',
+ 'total_list': '478'}
+2022-07-26 15:11:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '苹果派',
+ 'area': '77.91平米',
+ 'direction': '西北',
+ 'floor': '高楼层(共10层)',
+ 'model': '2室1厅',
+ 'name': '苹果派 ',
+ 'perfect': '精装',
+ 'price_list': '61,867元/平',
+ 'total_list': '482'}
+2022-07-26 15:11:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '太平桥西里',
+ 'area': '52.47平米',
+ 'direction': '南',
+ 'floor': '中楼层(共6层)',
+ 'model': '2室1厅',
+ 'name': '太平桥西里 ',
+ 'perfect': '简装',
+ 'price_list': '67,086元/平',
+ 'total_list': '352'}
+2022-07-26 15:11:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '金海国际南区',
+ 'area': '108.99平米',
+ 'direction': '东',
+ 'floor': '中楼层(共23层)',
+ 'model': '2室1厅',
+ 'name': '金海国际南区 ',
+ 'perfect': '精装',
+ 'price_list': '63,309元/平',
+ 'total_list': '690'}
+2022-07-26 15:11:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '南竹杆胡同',
+ 'area': '72平米',
+ 'direction': '南 北',
+ 'floor': '低楼层(共6层)',
+ 'model': '2室1厅',
+ 'name': '南竹杆胡同 ',
+ 'perfect': '精装',
+ 'price_list': '124,862元/平',
+ 'total_list': '899'}
+2022-07-26 15:11:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '益丰园',
+ 'area': '56.12平米',
+ 'direction': '南 北 西',
+ 'floor': '高楼层(共6层)',
+ 'model': '2室1厅',
+ 'name': '益丰园 ',
+ 'perfect': '简装',
+ 'price_list': '49,537元/平',
+ 'total_list': '278'}
+2022-07-26 15:11:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '东南小区',
+ 'area': '58.9平米',
+ 'direction': '南 北',
+ 'floor': '顶层(共6层)',
+ 'model': '2室1厅',
+ 'name': '东南小区 ',
+ 'perfect': '精装',
+ 'price_list': '147,708元/平',
+ 'total_list': '870'}
+2022-07-26 15:11:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '中信沁园',
+ 'area': '95.74平米',
+ 'direction': '东 西',
+ 'floor': '低楼层(共20层)',
+ 'model': '2室1厅',
+ 'name': '中信沁园 ',
+ 'perfect': '简装',
+ 'price_list': '170,253元/平',
+ 'total_list': '1630'}
+2022-07-26 15:11:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '永乐西区',
+ 'area': '59.56平米',
+ 'direction': '南 北',
+ 'floor': '顶层(共6层)',
+ 'model': '2室1厅',
+ 'name': '永乐西区 ',
+ 'perfect': '精装',
+ 'price_list': '43,654元/平',
+ 'total_list': '260'}
+2022-07-26 15:11:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '玉海园一里',
+ 'area': '60.6平米',
+ 'direction': '南 北',
+ 'floor': '低楼层(共6层)',
+ 'model': '2室1厅',
+ 'name': '玉海园一里 ',
+ 'perfect': '简装',
+ 'price_list': '98,845元/平',
+ 'total_list': '599'}
+2022-07-26 15:11:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '石园北区',
+ 'area': '90.67平米',
+ 'direction': '南 北',
+ 'floor': '顶层(共6层)',
+ 'model': '2室2厅',
+ 'name': '石园北区 ',
+ 'perfect': '简装',
+ 'price_list': '30,330元/平',
+ 'total_list': '275'}
+2022-07-26 15:11:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '天润福熙大道',
+ 'area': '140.66平米',
+ 'direction': '东 南 北',
+ 'floor': '低楼层(共26层)',
+ 'model': '3室2厅',
+ 'name': '天润福熙大道 ',
+ 'perfect': '精装',
+ 'price_list': '105,219元/平',
+ 'total_list': '1480'}
+2022-07-26 15:11:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '古城路小区',
+ 'area': '50.84平米',
+ 'direction': '南 北',
+ 'floor': '底层(共4层)',
+ 'model': '2室0厅',
+ 'name': '古城路小区 ',
+ 'perfect': '简装',
+ 'price_list': '42,880元/平',
+ 'total_list': '218'}
+2022-07-26 15:11:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '中泽雅园',
+ 'area': '66.29平米',
+ 'direction': '南 北',
+ 'floor': '中楼层(共6层)',
+ 'model': '2室1厅',
+ 'name': '中泽雅园 ',
+ 'perfect': '精装',
+ 'price_list': '40,731元/平',
+ 'total_list': '270'}
+2022-07-26 15:11:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '蒲安东里',
+ 'area': '62平米',
+ 'direction': '南 西',
+ 'floor': '高楼层(共18层)',
+ 'model': '2室1厅',
+ 'name': '蒲安东里 ',
+ 'perfect': '简装',
+ 'price_list': '65,323元/平',
+ 'total_list': '405'}
+2022-07-26 15:11:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': 'M5朗峰',
+ 'area': '57.2平米',
+ 'direction': '东',
+ 'floor': '中楼层(共10层)',
+ 'model': '2室1厅',
+ 'name': 'M5朗峰 ',
+ 'perfect': '精装',
+ 'price_list': '62,588元/平',
+ 'total_list': '358'}
+2022-07-26 15:11:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '滨河坊',
+ 'area': '81.45平米',
+ 'direction': '东 西',
+ 'floor': '底层(共6层)',
+ 'model': '2室1厅',
+ 'name': '滨河坊 ',
+ 'perfect': '简装',
+ 'price_list': '32,045元/平',
+ 'total_list': '261'}
+2022-07-26 15:11:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '梅兰居',
+ 'area': '65.41平米',
+ 'direction': '南',
+ 'floor': '高楼层(共16层)',
+ 'model': '1室1厅',
+ 'name': '梅兰居 ',
+ 'perfect': '简装',
+ 'price_list': '36,386元/平',
+ 'total_list': '238'}
+2022-07-26 15:11:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '天桥北里',
+ 'area': '79.2平米',
+ 'direction': '西南',
+ 'floor': '中楼层(共12层)',
+ 'model': '2室1厅',
+ 'name': '天桥北里 ',
+ 'perfect': '简装',
+ 'price_list': '93,435元/平',
+ 'total_list': '740'}
+2022-07-26 15:11:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '冠英园小区',
+ 'area': '112.2平米',
+ 'direction': '南 北',
+ 'floor': '中楼层(共10层)',
+ 'model': '2室1厅',
+ 'name': '冠英园小区 ',
+ 'perfect': '精装',
+ 'price_list': '135,473元/平',
+ 'total_list': '1520'}
+2022-07-26 15:11:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '三里河一区3号院',
+ 'area': '105.5平米',
+ 'direction': '东南',
+ 'floor': '顶层(共18层)',
+ 'model': '2室1厅',
+ 'name': '三里河一区3号院 ',
+ 'perfect': '精装',
+ 'price_list': '161,138元/平',
+ 'total_list': '1700'}
+2022-07-26 15:11:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '太平桥东里',
+ 'area': '58.4平米',
+ 'direction': '南 北',
+ 'floor': '中楼层(共6层)',
+ 'model': '2室1厅',
+ 'name': '太平桥东里 ',
+ 'perfect': '其他',
+ 'price_list': '68,322元/平',
+ 'total_list': '399'}
+2022-07-26 15:11:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '安慧北里逸园',
+ 'area': '58.8平米',
+ 'direction': '南 北',
+ 'floor': '低楼层(共6层)',
+ 'model': '2室1厅',
+ 'name': '安慧北里逸园 ',
+ 'perfect': '精装',
+ 'price_list': '90,137元/平',
+ 'total_list': '530'}
+2022-07-26 15:11:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '京通苑',
+ 'area': '63.36平米',
+ 'direction': '西南',
+ 'floor': '中楼层(共24层)',
+ 'model': '1室1厅',
+ 'name': '京通苑 ',
+ 'perfect': '精装',
+ 'price_list': '47,665元/平',
+ 'total_list': '302'}
+2022-07-26 15:11:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '葡东小区',
+ 'area': '64.01平米',
+ 'direction': '南 西',
+ 'floor': '中楼层(共6层)',
+ 'model': '2室1厅',
+ 'name': '葡东小区 ',
+ 'perfect': '精装',
+ 'price_list': '37,182元/平',
+ 'total_list': '238'}
+2022-07-26 15:11:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '杏林园',
+ 'area': '110.57平米',
+ 'direction': '东南',
+ 'floor': '18层',
+ 'model': '3室1厅',
+ 'name': '杏林园 ',
+ 'perfect': '简装',
+ 'price_list': '54,988元/平',
+ 'total_list': '608'}
+2022-07-26 15:11:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '富力惠兰美居',
+ 'area': '67.6平米',
+ 'direction': '南',
+ 'floor': '中楼层(共28层)',
+ 'model': '2室1厅',
+ 'name': '富力惠兰美居 ',
+ 'perfect': '精装',
+ 'price_list': '39,645元/平',
+ 'total_list': '268'}
+2022-07-26 15:11:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://bj.lianjia.com/ershoufang/pg3/>
+{'address': '华远铭悦园',
+ 'area': '73.9平米',
+ 'direction': '南 北',
+ 'floor': '27层',
+ 'model': '2室1厅',
+ 'name': '华远铭悦园 ',
+ 'perfect': '精装',
+ 'price_list': '40,867元/平',
+ 'total_list': '302'}
+2022-07-26 15:11:55 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-07-26 15:11:55 [scrapy.extensions.feedexport] INFO: Stored csv feed (90 items) in: lianjia.csv
+2022-07-26 15:11:55 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1192,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 3,
+ 'downloader/response_bytes': 94719,
+ 'downloader/response_count': 3,
+ 'downloader/response_status_count/200': 3,
+ 'elapsed_time_seconds': 5.491985,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 7, 26, 7, 11, 55, 603008),
+ 'httpcompression/response_bytes': 557657,
+ 'httpcompression/response_count': 3,
+ 'item_scraped_count': 90,
+ 'log_count/DEBUG': 98,
+ 'log_count/INFO': 11,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 2,
+ 'response_received_count': 3,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2022, 7, 26, 7, 11, 50, 111023)}
+2022-07-26 15:11:55 [scrapy.core.engine] INFO: Spider closed (finished)
